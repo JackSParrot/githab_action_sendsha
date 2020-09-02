@@ -1,0 +1,12 @@
+name: 'Send SHA'
+description: 'Send the latest sha of the main branch'
+inputs:
+  url:  
+    description: 'Where to send it'
+    required: true
+  sha:  
+    description: 'latest sha of the main branch'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
